@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Deployment Tutorial 1</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body style="background: #cc9900;">
+  <h1>Pendapatan Tahunan Produk Susu </h1>
+ <div class="center">
+      <form action = "http://localhost:5000" method = "POST">
+         <p> Input regional pembeli 1-Lisnon, 2-Oporto atau 3-Other <input type = "text" name = "Biayaiklan" /> <input type = "submit" value = "OK" /> </p>
+      </form>
+    
+   <p>Prediksi pendapatan dari kategori produk susu dengan satuan moneter: {{ result }}</p>
+   </div>
+   </body>
+<style>
+    .div2 {
+     width: 500px;
+     height: 100px;  
+     padding: 50px;
+     border: 1px solid black;
+   }
+   </style>
+</html>
